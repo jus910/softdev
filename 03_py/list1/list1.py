@@ -14,3 +14,25 @@ def common_end(a, b):
 
 def sum3(nums):
   return sum(nums)
+
+def rotate_left3(nums):
+  return [nums[1], nums[2], nums[0]]
+
+def reverse3(nums):
+  return nums[::-1]
+
+def max_end3(nums):
+  max_num = max(nums[0],nums[2])
+  return [max_num] * 3
+
+def sum2(nums):
+  if len(nums)==0:
+    return 0
+  elif len(nums) < 2:
+    return nums[0]
+  return nums[1]+nums[0]
+
+print(rotate_left3([1, 2, 3]))
+print(reverse3([1, 2, 3]))
+print(max_end3([1, 2, 3]) )
+print(sum2([1, 2, 3]) )
