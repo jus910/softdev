@@ -32,7 +32,25 @@ def sum2(nums):
     return nums[0]
   return nums[1]+nums[0]
 
+def middle_way(a, b):
+  #one liner
+  return [a[1] ,b[1]]
+
+def make_ends(nums):
+  return [nums[0] , nums[-1]]
+
+def has23(nums):
+  return nums[0] == 2 or nums[0]==3 or nums[1] == 2 or nums[1]==3
+
+print(first_last6([1, 2, 6]))
+print(same_first_last([1, 2, 3]) )
+print(make_pi())
+print(common_end([1, 2, 3], [7, 3]))
+print(sum3([1, 2, 3]))
 print(rotate_left3([1, 2, 3]))
 print(reverse3([1, 2, 3]))
 print(max_end3([1, 2, 3]) )
 print(sum2([1, 2, 3]) )
+print(middle_way([1, 2, 3], [4, 5, 6]) )
+print(make_ends([1, 2, 3]))
+print(has23([2, 5]))
