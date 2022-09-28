@@ -4,7 +4,7 @@ Duckies: Catbat, Alfred, Blueman
 Softdev
 04_choose
 2022-09-23
-time spent:
+time spent: 1 hr
 DISCO:
   - Key must be defined
   - list is an unhashable type
