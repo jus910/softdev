@@ -4,14 +4,15 @@ Duckies: Catbat, Alfred
 Softdev
 05_bitstream
 2022-09-29
-time spent: 30 min
+time spent: 0.9
 DISCO:
-  - We can use the .splt("str") method to split a string into a list
+  - We can use the .split("str") method to split a string into a list
   - TypeError: 'dict_keys' object is not subscriptable
-    - We must 
 QCC:
   - Will a student always have a Ducky?
+  - Will the file end with '@@@' all of the time?
 OPS SUMMARY:
+  - We read entire file as 1 string
   - We first split the string into a list of tuples
   - Next we split the tuples into their own lists which we store in another list
   - Then we put the duckies and students into a dictionary with the periods as keys and a list
@@ -21,18 +22,24 @@ OPS SUMMARY:
 """
 import random as rng
 
-str_test=''
-for i in range(5):
-    str_test+='8$$$bruh$$$ducky@@@'
-    str_test+='8$$$mmori$$$duck2y@@@'
-    str_test+='2$$$mmori$$$ducky@@@'
-    str_test+='7$$$jmohabir$$$ducky@@@'
-    str_test+='7$$$bruh$$$ducky2@@@'
+# str_test=''
+# for i in range(5):
+#     str_test+='8$$$bruh$$$ducky@@@'
+#     str_test+='8$$$mmori$$$duck2y@@@'
+#     str_test+='2$$$mmori$$$ducky@@@'
+#     str_test+='7$$$jmohabir$$$ducky@@@'
+#     str_test+='7$$$bruh$$$ducky2@@@'
 
 #print(str_test)
 
+with open('krewes.txt','r') as f:
+    str_test = f.read()             # entire file in 1 string
+
+# print(str_test)
+
 list1=str_test.split('@@@')
-#print(list1)
+list1 = list1[:-1]              # ignores the last term, a \n
+# print(list1)
 
 
 list2=[]
@@ -40,8 +47,9 @@ list2=[]
 #Makes list within a list to seperate each tuple
 for i in list1:
     list2+=[i.split('$$$')]
-list2=list2[:-1]
-#print(list2)
+# print(list2)
+# list2=list2[:-1]
+print(list2)
 
 big_dict = {}
 
@@ -54,17 +62,23 @@ for i in list2:
     else:
         #Makes list if one is not already there
         big_dict[i[0]]= [[i[1]],[i[2]]]
-        
-#print(big_dict)
 
-def randomSoftDev():
+print(big_dict)
+
+def random_soft_dev():
     periods=list(big_dict.keys())
     #print(periods)
     rand_period=rng.choice(periods)
     #print(rand_period)
+    print(big_dict[rand_period][0])
     rand_index=int((rng.random()*len(big_dict[rand_period][0])))
     #print(rand_index)
-    return big_dict[rand_period][0][rand_index] + " from period " + rand_period + " with ducky " + big_dict[rand_period][1][rand_index] + " are the chosen duo!!!"
-    
+    return big_dict[rand_period][0][rand_index] \
+           + " from period " \
+           + rand_period \
+           + " with ducky " \
+           + big_dict[rand_period][1][rand_index] \
+           + " are the chosen duo!!!"
+
 for i in range(10):
-    print(randomSoftDev())
+    print(random_soft_dev())
