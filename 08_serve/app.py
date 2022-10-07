@@ -1,5 +1,5 @@
 # Team Ducks: Ryan Lee, Justin Mohabir, Selena Ho
-# Duckies: 
+# Duckies: Luigi, Alfred, Soy
 # SoftDev
 # Oct 2022
 import random as rg
@@ -43,16 +43,17 @@ app = Flask(__name__) #create instance of class Flask
 
 @app.route("/")       #assign fxn to route
 def hello_world():
+    tester={}
     print("the __name__ of this module is... ")
     print(__name__)
-    for i in range(1000000):
-        occ = random_occupation()
-        if occ not in tester:
-            tester[occ] = 0
-        tester[occ] += 1
-    return tester
+    ret=""
+    ret += "We are Team Ducks: Ryan Lee, Justin Mohabir, Selena Ho" + "<br/>" + "<br/>"
+    ret += "The random occupation is : " + random_occupation() + "<br/>" + "<br/>"
+    ret += "Your options were:" + "<br/>"
+    for job in dict_data:
+        ret+=str(job) + "<br/>"
+    return ret
 
 if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change
-    tester={}
     app.run()

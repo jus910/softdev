@@ -1,4 +1,5 @@
-# Clyde 'Thluffy' Sinclair
+# Team Ducks: Ryan Lee, Justin Mohabir, Selena Ho
+# Duckies: Luigi, Alfred, Soy
 # SoftDev
 # Oct 2022
 # /usr/bin/python3: No module named thonny.plugins.cpython.app error

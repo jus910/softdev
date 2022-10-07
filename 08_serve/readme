@@ -1,0 +1,27 @@
+# Team Ducks: Ryan Lee, Justin Mohabir, Selena Ho
+## Plan 
+- Look through all of the versions of app.py and store the notes on their respective files 
+- Using the code from v4 and k06_py-csv as a template to complete the assignment 
+- Change the output from v4 to be a random occupation 
+- Once we have random occupations printing in the website, add in the TNPG and roster and the list of occupations
+- Add a hyperlink to output
+## Disco 
+v0
+- Changing the name of "hello_world" function doesn't change anything
+- The route function can't return an integer
+- Clicking on link runs helloworld
+v1
+- when we run this it does nor print _main_ in the terminal
+v2
+- Prints statement in the terminal
+v3 
+- /usr/bin/python3: No module named thonny.plugins.cpython.app error
+- when debug mode is on
+- MUST DEDICATE A TERMINAL FOR FLASK
+- we can change the hello_world() and reloading the page changes
+- app.debug() = true updates 
+
+- the string that is returned by the function that is assigned to the route is in html
+- The dictionary looks pretty with JSON when we return a dictionary in the route function
+## QCC 
+- What is JSON?

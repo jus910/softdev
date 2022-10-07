@@ -1,4 +1,5 @@
-# Clyde 'Thluffy' Sinclair
+# Team Ducks: Ryan Lee, Justin Mohabir, Selena Ho
+# Duckies: Luigi, Alfred, Soy
 # SoftDev
 # Oct 2022
 # when we run this it does nor print _main_ in the terminal
