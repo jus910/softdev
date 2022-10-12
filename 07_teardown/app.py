@@ -11,11 +11,10 @@ from flask import Flask
 
 app = Flask(__name__) # Q0: Where have you seen similar syntax in other langs? 
 
-@ app.route("/") # Q1: What points of reference do you have for meaning of '/'?
+@app.route("/") # Q1: What points of reference do you have for meaning of '/'?
 def hello_world():
     print(__name__) # Q2: Where will this print to? Q3: What will it print?
-    print('huh')
-    return "queso"#"No hablo queso!"  # Q4: Will this appear anywhere? How u know?
+    return 1#"No hablo queso!"  # Q4: Will this appear anywhere? How u know?
 
 app.run()  # Q5: Where have you seen similar constructs in other languages?
 
@@ -24,14 +23,13 @@ app.run()  # Q5: Where have you seen similar constructs in other languages?
 DISCO:
 - Changing the name of "hello_world" function doesn't change anything
 - It can't return an integer
-- Clicking on link runs helloworld
 QCC:
-0. Jframe??? Java new instance of a class, constructor?
+0. Jframe??? Java neew instance of a class, constructor?
 1. Seperating files
-2. In a web browser (terminal?)
+2. In a web browser
 3. No hablo queso!
 4. At the link 127.0.0.1:5000
-5. In Processing, .draw() from another file, calling a method in java
+5. In Processing, .draw() from another file
 ...
 INVESTIGATIVE APPROACH:
 <Your concise summary of how
