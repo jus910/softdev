@@ -1,0 +1,14 @@
+Ryan Lee, Justin Mohabir, Selena Ho
+SoftDev
+K09 -- flask with static webpages
+2022-10-1
+time spent: 0.9
+DISCO:
+- When we did http://localhost:5000/static/foo.html instead of http://localhost:5000/static/foo Chrome opened a webpage with the contents of foo.html 
+- Doing http://localhost:5000/static/foo downloaded a plain text file foo
+- Have to run app.py before you're able to access foo.html
+- Reloading the website after you change foo.html loads the updates
+- We can link foo.html to app.py --> changing foo.html changes what is displayed on the web browser
+QCC:
+- What is the point of foo?
+- How is a web server related to what we're doing and what is its role? 
