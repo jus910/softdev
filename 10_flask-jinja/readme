@@ -1,0 +1,26 @@
+# Ryan Lee, Justin Mohabir, Selena Ho
+# Team: Ducks
+# Luigi, Alfred, Soy
+# SoftDev
+# K10 -- flask-jinja
+# 2022-10-13
+# time spent: .6
+DISCO:
+Q0- There will be a this function does not exist error because we call
+render_template( 'model_tmplt.html', foo="fooooo", collection=coll)
+Q1- Home address/ local/ my_foist_template
+Q2- First argument is the name of the jinja2 template.
+Second argument is title of the webpage
+Third argument is the collection of elements referenced in the app.py
+- There is no other link for the /my_foist_template
+
+QCC:
+-how do you write a template
+-
+
+Prediction:
+- Prints out all the items in the collection when we run the
+python script
+- We think the hello_world function prints "No hablo queso!"
+in the home address
+- In the terminal we will get two addresses
