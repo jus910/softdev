@@ -1,0 +1,29 @@
+# Ryan Lee, Justin Mohabir, Selena Ho
+# Team: Ducks
+# Duckies: Luigi, Alfred, Soy
+# SoftDev
+# K11 -- Form(s) Like Voltron
+# 2022-10-14
+# time spent: .6
+
+Disco:
+- Print app prints <Flask 'app'>
+- print request prints the address that the terminal is requesting to use
+- print rqeust.args() prints ImmutableMultiDict([])
+  - Immutable dictionary stores the username values which is why they should not be changed 
+  or include repeat values
+- Headers are information about the browser, operating system, and terminal being used
+ - action="/auth" in the html file connects the username information to the route "/auth
+  " in backend
+- When we add a username to the query then a data type of 'username' and the username are saved
+  along with a (sub1, and 'submit Query') from the login.html file
+- A multidictinary is a sub-class of dic that can contain multiple values for the same key
+QCC:
+what does methods=['GET', 'POST']) mean?
+Predictions: 
+- disp_loginpage() will print many statements in the terminal 
+- print(app) will print an address 
+- print(request.args) and print(request.headers) will print 
+
+-authenticate() will 
+html form inputs
