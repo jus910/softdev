@@ -46,9 +46,13 @@ def hello_world():
     tester={}
     print("the __name__ of this module is... ")
     print(__name__)
+    occ=random_occupation()
+    occ.replace(" ", "")
+    link="https://careers.google.com/jobs/results/?distance=50&hl=en_US&jlo=en_US&q=" + "
     ret=""
     ret += "We are Team Ducks: Ryan Lee, Justin Mohabir, Selena Ho" + "<br/>" + "<br/>"
-    ret += "The random occupation is : " + random_occupation() + "<br/>" + "<br/>"
+    ret += "The random occupation is : " + "<a href= \""+ link \">" \
+           + random_occupation() + "</a>" + "<br/>" + "<br/>"
     ret += "Your options were:" + "<br/>"
     for job in dict_data:
         ret+=str(job) + "<br/>"

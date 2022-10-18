@@ -23,5 +23,7 @@ v3
 
 - the string that is returned by the function that is assigned to the route is in html
 - The dictionary looks pretty with JSON when we return a dictionary in the route function
+- app.debug should always be true!!!
 ## QCC 
 - What is JSON?
+- What is the significance of if __name__ == "__main__"?
