@@ -1,9 +1,8 @@
-# Ryan Lee, Justin Mohabir, Selena Ho
-# Team: Ducks
-# Duckies: Luigi, Alfred, Soy
+# Verit Li, Brian Yang, Justin Mohabir
+# Team: Uh?
 # SoftDev
-# K11 -- Form(s) Like Voltron
-# 2022-10-14
+# K12: Take and Give
+# 2022-10-17
 # time spent: .6
 
 from flask import Flask             #facilitate flask webserving
@@ -20,7 +19,7 @@ app = Flask(__name__)    #create Flask object
 trioTASK:
 ~~~~~~~~~~~ BEFORE RUNNING THIS, ~~~~~~~~~~~~~~~~~~
 ...read for understanding all of the code below.
-Some will work as written; other sections will not. 
+Some will work as written; other sections will not.
 TASK: Predict which...
 Devise some simple tests you can run to "take apart this engine," as it were.
 Execute your tests.
@@ -41,8 +40,18 @@ def disp_loginpage():
     print(request)
     print("***DIAG: request.args ***")
     print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
+    print("***DIAG: request.args['username']  ***")
+    try:
+        print(request.args['username']) #prints the the value associated with the key 'username' in ImmutableMultiDict
+    except:
+        print("ERROR: there is no username in args")
+    print("***DIAG: request.form ***")
+    print(request.form)
+    print("***DIAG: request.form['username']  ***")
+    try:
+        print(request.form['username'])
+    except:
+        print("ERROR: there is no username in form")
     print("***DIAG: request.headers ***")
     print(request.headers)
     return render_template( 'login.html' )
@@ -57,25 +66,24 @@ def authenticate():
     print(request)
     print("***DIAG: request.args ***")
     print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
+    print("***DIAG: request.args['username']  ***")
+    try:
+        print(request.args['username'])
+    except:
+        print("ERROR: there is no username in args")
+    print("***DIAG: request.form ***")
+    print(request.form)
+    print("***DIAG: request.form['username']  ***")
+    try:
+        print(request.form['username'])
+    except:
+        print("ERROR: there is no username in form")
     print("***DIAG: request.headers ***")
     print(request.headers)
-    print(request.form)
-    return render_template('response.html') #response to a form submission
+    username = request.form['username']
+    return render_template('response.html', user=username, request_method = request.method) #response to a form submission
 
-# allow both GET and POST requests
-@app.route('/form-example', methods=['GET', 'POST'])
-def form_example():
-    return '''
-              <form method="POST">
-                  <div><label>Language: <input type="text" name="language"></label></div>
-                  <div><label>Framework: <input type="text" name="framework"></label></div>
-                  <input type="submit" value="Submit">
-              </form>'''
-
-    
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
-    app.debug = True 
+    app.debug = True
     app.run()
