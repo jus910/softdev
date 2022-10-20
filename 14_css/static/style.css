@@ -1,0 +1,61 @@
+
+body{
+  background-color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table, th, td {
+  /*border: 1px solid black;
+  This makes the table start at the top*/
+  vertical-align: top;
+  padding: 5px;
+}
+
+#heading{
+  display:grid;
+  color : white;
+  text-align: center;
+  background-color: #d3d3d3;
+  font-weight: bold;
+}
+
+#main_foo_heading{
+  font-weight: bold;
+}
+
+#nav_foo_heading{
+  font-weight: bold;
+}
+
+#lorum_ipsum{
+  background-color: darkgrey;
+}
+
+#te_tings{
+  color : white;
+}
+
+.not_main_heading{
+  margin:0;
+  padding:0;
+  background-color: darkgrey;
+}
+#footer{
+  float: footer;
+  float: right;
+  background-color: #63666A;
+}
+#footer:before{
+  content:"";
+  background-color:#63666A;
+  position: absolute;
+  height: 5%;
+  width: 200vw;
+  left: -100vw;
+  z-index: -1;
+}
+
+h1, h2, h3 ,h4{
+  margin:0;
+  padding:0;
+}
