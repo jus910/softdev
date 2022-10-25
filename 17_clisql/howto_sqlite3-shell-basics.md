@@ -1,44 +1,69 @@
 # how-to :: sqlite3-shell-basics
 ---
 ## Overview
-- ```bash
-    sqlite3 ex1
-    ``` 
-    - creates a file called ex1 in the terminal
+Allows organization of relational databases
 
-- ```sql
-    create table tbl1(one text, two int);
-    ```
-  - tbl1 is the name of the table, one and two are column names, and the text/int are object type
-- ```sql
-    tbl1 values('hello!',10);
-    ```
-    - will add a row with column onw containing 'hello!' and column two containing 10
-
-- ```sql
-    .mode markdown
-    ```
-    - This will display the data in the markdown table format (We could also use csv and others)
-- ```sql
-    select * from tbl1;
-    ```
-  - Display the table in the shell (mardown mode depicted below)
-
-|  one   | two |
-|--------|-----|
-| hello! | 3   |
-| goof   | 403 |
-
-- ```sql
-    .mode box --wrap 30
-    ``` 
-    - displays a table in the shell
-- ```sql
-    select * from tbl1 where two>50; 
-    ``` 
-    - will only display the rows where their element in column "two" is greater than 50
-- JSON appears to be a list of python dictionaries
 ### Estimated Time Cost: 0.5 hrs 
+
+### Prerequisites:
+
+- How to open a terminal
+- have sqlite3 installed
+
+1. start the sqlite3 program with the terminal command `sqlite3`
+	1. you can create a new database at the same time instead if you do `sqlite3 <DATABASE_NAME>`
+	1. you can reopen a database or create one at a specfic location with the command `.open <ADDRESS_TO_DATABASE>`
+1. to create a new table use the format:
+	1. `create table <TABLE_NAME>(<FIELD_NAME_0> <DATA_TYPE_0>, <FIELD_NAME_1> <DATA_TYPE_1>, ...);`
+	1. or 
+		```
+		CREATE TABLE <TABLE_NAME> (
+			<FIELD_NAME_0> <DATA_TYPE_0>, 
+			<FIELD_NAME_1> <DATA_TYPE_1>,  
+			...
+		);
+		```
+1. to view all the contents of a table, use the command:
+	```
+	select * from <TABLE_NAME>;
+	```
+1. you can change the format you output the table in with `.mode <OUTPUT_FORMAT>`
+	> output formats include: ascii, box, csv, column, html, insert, json, line, list, markdown, quote, table, tabs, and tcl
+	
+	1. csv example:
+		```
+		hello!,10
+		goodbye,20
+		```
+	2. html example:
+		```
+		<TR><TD>hello!</TD> 
+		<TD>10</TD> 
+		</TR> 
+		<TR><TD>goodbye</TD> 
+		<TD>20</TD> 
+		</TR> 
+		```
+	3. box example:
+		```
+		┌─────────┬─────┐
+		│   one   │ two │
+		├─────────┼─────┤
+		│ hello!  │ 10  │
+		│ goodbye │ 20  │
+		└─────────┴─────┘
+		```
+
+1. to see a list of tables in the database use the command `.tables`
+
+			
+
+### Resources
+* [sqlite official documentation](https://www.sqlite.org/cli.html)
+
+---
+
+Accurate as of (last update): 2022-10-24
 
 #### Contributors:  
 Verit Li, pd8  
