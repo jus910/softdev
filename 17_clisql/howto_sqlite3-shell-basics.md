@@ -15,7 +15,10 @@
     ```
     - will add a row with column onw containing 'hello!' and column two containing 10
 
-- We can use different output types to display tables, with .mode csv/markdown
+- ```sql
+    .mode markdown
+    ```
+    - This will display the data in the markdown table format (We could also use csv and others)
 - ```sql
     select * from tbl1;
     ```
