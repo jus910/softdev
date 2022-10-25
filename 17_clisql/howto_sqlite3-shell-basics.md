@@ -4,7 +4,7 @@
 - ```bash
     sqlite3 ex1
     ``` 
-    - creates a file called ex1 in the termina;
+    - creates a file called ex1 in the terminal
 
 - ```sql
     create table tbl1(one text, two int);
