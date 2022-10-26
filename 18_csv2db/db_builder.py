@@ -15,28 +15,29 @@ db = sqlite3.connect(DB_FILE) #open if file exists, otherwise create
 c = db.cursor()               #facilitate db ops -- you will use cursor to trigger db events
 
 #==========================================================
-student = open('students.csv', "r")
-
-reader = csv.DictReader(student)
-c.execute("create table students(name TEXT, age INTEGER, id INTEGER);")
-for row in reader:
-    c.execute("insert into students values('" + row['name']+"'," +row['age']+ "," +row['id']+");")
-    
-
-course = open('courses.csv', "r")
-
-reader2 = csv.DictReader(course)
-c.execute("create table courses(code TEXT, mark INTEGER, id INTEGER);")
-for row in reader2:
-    c.execute("insert into courses values('" + row['code']+"'," +row['mark']+ "," +row['id']+");")
-    
-
 
 # < < < INSERT YOUR TEAM'S POPULATE-THE-DB CODE HERE > > >
 
 
-command = ""          # test SQL stmt in sqlite3 shell, save as string
-c.execute(command)    # run SQL statement
+#command = ""          # test SQL stmt in sqlite3 shell, save as string
+#c.execute(command)    # run SQL statement
+
+with open('students.csv', "r") as student:  #creates a file object allows reading into
+   reader = csv.DictReader(student) #creates a iterable object where each row is a dictionary with headings as keys
+   c.execute("create table students(name TEXT, age INTEGER, id INTEGER);")
+   for row in reader:
+   	c.execute("insert into students values('" + row['name']+"'," +row['age']+ "," +row['id']+");")
+    
+
+with open('courses.csv', "r") as course:
+   reader2 = csv.DictReader(course)
+   c.execute("create table courses(code TEXT, mark INTEGER, id INTEGER);")
+   for row in reader2:
+       c.execute("insert into courses values('" + row['code']+"'," +row['mark']+ "," +row['id']+");")
+    
+
+
+
 
 #==========================================================
 
