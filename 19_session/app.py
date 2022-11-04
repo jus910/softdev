@@ -1,7 +1,7 @@
 # Verit Li, Brian Yang, Justin Mohabir
 # Team: Uh?
 # SoftDev
-# K12: Take and Give
+# K19: Sessions Greetings
 # 2022-10-17
 # time spent: .6
 
