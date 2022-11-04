@@ -1,0 +1,16 @@
+Verit Li, Brian Yang, Justin Mohabir
+Team: Uh?
+SoftDev
+K12: Take and Give
+2022-10-17
+time spent: .6
+
+DISCO :
+- import many a things
+- forms will store information in the request.forms when a post request is called
+- cookies are linked to the random key (same random key means same cookies)
+- session.pop() will remove all data from the session
+- url_for('fxn') will get url of a fxn
+- redirect(url) will bring user to the url
+ QCC:
+- Should we store a secret_key for each user?
