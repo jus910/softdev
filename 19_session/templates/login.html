@@ -3,9 +3,9 @@
 # Verit Li, Brian Yang, Justin Mohabir
 # Team: Uh?
 # SoftDev
-# K12: Take and Give
-# 2022-10-17
-# time spent: .6
+# K19: Sessions Greetings
+# 2022-11-03
+# time spent: 1.0
  -->
 
 <html>
@@ -25,7 +25,7 @@
     <h3>
       Enter your username and password below to proceed.
     </h3>
-    <form action="/auth" method="post">
+    <form action="/login" method="post">
       User
       <input type="text" name="username">
       <br>
@@ -33,6 +33,8 @@
       <input type = text name=password>
       <input type="submit" name="sub1">
     </form>
+    <br>
+	<h2>{{ authentication_message }}</h2>
     <br>
   </body>
 
