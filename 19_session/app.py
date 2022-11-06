@@ -1,7 +1,7 @@
 # Verit Li, Brian Yang, Justin Mohabir
 # Team: Uh?
 # SoftDev
-# K19: Sessions Greetings
+# K12: Take and Give
 # 2022-10-17
 # time spent: .6
 
@@ -10,7 +10,7 @@ import os
 app = Flask(__name__)
 
 # Set the secret key to some random bytes. Keep this really secret!
-app.secret_key = os.urandom(32)
+app.secret_key = 'foo'
 
 from flask import session
 
@@ -22,7 +22,7 @@ the_password = "getstitches"
 def login():
     if 'username' in session:
         if session['username'] == the_username and session['password'] == the_password:
-            return render_template("response.html", user=session['username'])
+            return render_template("response.html", user=session['username'],huhs='nothing')
         else:
             # Must highlight what the user did wrong
             wrongdoings=""
@@ -30,7 +30,7 @@ def login():
                 wrongdoings+=' Username Wrong'
             if session['password'] != the_password:
                 wrongdoings+=' Password Wrong'
-            return render_template("error.html",huhs=wrongdoings)
+            return render_template("response.html",user=session['username'],huhs=wrongdoings)
     return render_template("login.html")
 
 #auth is called after a form is submitted as seen in the html file
