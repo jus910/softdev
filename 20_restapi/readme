@@ -1,0 +1,16 @@
+TNPG: tweam; Shreya Roy, Justin Mohabir 
+SoftDev
+K20 
+Time Spent: .6 hr
+
+QCC:
+
+* Is there a better way to access the API's json other than
+copy-pasting the first part of the url?
+
+
+DISCO:
+
+* reading the file with our API key inserts a newline character at the end.
+* requests.get returns the contents of the API
+* json acts like a dictionary
