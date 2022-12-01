@@ -1,0 +1,14 @@
+TNPG: tweam; Shreya Roy, Justin Mohabir 
+SoftDev
+K23 
+Time Spent: .6 hr
+
+QCC:
+
+* How do we use the "table-scroll" class?
+* How can you apply multiple classes to the same object? 
+
+DISCO:
+
+* <table class="hover"> will allow hovering over this table to highlight the rows
+* <div class="switch"> will add a switch that can be flicked on or off
