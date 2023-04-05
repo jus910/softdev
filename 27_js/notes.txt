@@ -1,0 +1,22 @@
+;// Team Hair Investment Uncles :: Daniel He, Justin Mohabir, Sir, Alfred
+SoftDev pd2
+K27 -- Basic functions in JavaScript
+2023-04-03t
+
+DISCO
+-----------------------------------------------------------------
+* The if statement in Scheme has 3 parameters:
+  - a conditional
+  - a return value
+  - and what to do if the statement is false
+* use node <filename>.js to run script in terminal
+* use console.log(<stuff>) to print to terminal, works like python
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* How do you run scheme files in the terminal?
+* How do you call js on the html file?
+* We used weScheme to run the scheme file
+* We used node to run the js file in the terminal
+=================================================================
