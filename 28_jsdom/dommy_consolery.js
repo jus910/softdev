@@ -82,6 +82,9 @@ function fib(n) {
   }
   return fib(n-1) + fib(n-2);
 }
+
+addItem("fib(5): " + fib(5))
+
 // FAC
 function fac(n) {
   if (n<2){
@@ -89,6 +92,8 @@ function fac(n) {
   }
   return n * fac(n-1);
 }
+
+addItem("fac(5): " + fac(5))
 
 // GCD
 function gcd(a,b) {
@@ -102,6 +107,8 @@ function gcd(a,b) {
     return gcd(b-a,a);
   }
 }
+
+addItem("gcs(27,36): " + gcd(27,36))
 
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
