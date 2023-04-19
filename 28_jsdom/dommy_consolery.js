@@ -108,7 +108,7 @@ function gcd(a,b) {
   }
 }
 
-addItem("gcs(27,36): " + gcd(27,36))
+addItem("gcd(27,36): " + gcd(27,36))
 
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
