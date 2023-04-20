@@ -1,0 +1,19 @@
+Team UHhh  :: FMC, JM
+SoftDev pd02
+K29 -- Building Castles in the Sand
+2023-04-20r
+
+DISCO
+-----------------------------------------------------------------
+* You can pass/get the contents of the expanded function by just 
+calling the fxnName. fxnName() would run the function.
+* const are immutatable.
+* innerHTML is the content of an HTML element.
+* DO NOT USE "function fxnName() {};" to declare a function!
+
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* what is "[[Prototype]]: Object," found in var o?
+=================================================================

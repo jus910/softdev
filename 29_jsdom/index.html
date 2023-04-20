@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<!--
+    Team UHhh :: FMC, JM
+    SoftDev pd02
+    K29 -- Building Castles in the Sand
+    2023-04-20r
+   --------------------------------------------------
+-->
+
+<html lang="en">
+  <!-- HTML file for exploring JavaScript interactions with the DOM -->
+
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .red   {color : #ff0000;}
+      .green {color : #00ff00;}
+      .blue  {color : #0000ff;}
+    </style>
+  </head>
+
+  <body>
+    <h1 id="h" class="blue">Hello World!</h1>
+
+    <div id="div1" class="green">This is a div</div>
+    <div id="div2">This is a second div</div>
+    <div class="blue">This is a toid div</div>
+
+    <ol id="thelist">
+      <li class="">item 0</li>
+      <li class="green blue">item 1</li>
+      <li class="green blue">item 2</li>
+      <li class="red green blue">item 3</li>
+      <li class="red blue green">item 4</li>
+      <li class="green blue">item 5</li>
+      <li class="green blue">item 6</li>
+      <li class="">item 7</li>
+    </ol>
+
+    <div id="fib">
+      <h2>Fibonacci Sequence</h2>
+      <button id="fibby">Run</button>
+      <div id="fib0">fib(0) ==> </div>
+      <div id="fib5">fib(5) ==> </div>
+    </div>
+
+    <div id="fact">
+      <h2>Factorials</h2>
+      <button id="facty">Run</button>
+      <div id="fact0">fact(0) ==> </div>
+      <div id="fact5">fact(5) ==> </div>
+    </div>
+
+    <div id="gcd">
+      <h2>Greatest Common Divisor</h2>
+      <button id="gcdee">Run</button>
+      <div id="gcd0_1">gcd(0,1) ==> </div>
+      <div id="gcd10_15">gcd(10,15) ==> </div>
+    </div>
+
+    <script src="dommy_consolery.js"></script>
+
+    <!-- <script>
+      addText("fib0", fib(0));
+      addText("fib5", fib(5));
+      
+      addText("fact0", fact(0));
+      addText("fact5", fact(5));
+
+      addText("gcd0_1", gcd(0,1));
+      addText("gcd10_15", gcd(10,15))
+    </script> -->
+
+  </body>
+</html>
