@@ -1,0 +1,19 @@
+// Team Hair Investment Uncles :: Daniel He, Justin Mohabir, Sir, Alfred
+SoftDev pd2
+// K30 - JS Paint
+2023-04-24m
+
+DISCO
+-----------------------------------------------------------------
+* If we do not use ctx.beginPath(); before drawing an arc then the arcs will connect
+* We must use ctx.stroke(); to draw the arc
+* clearRect(x, y, width, height) clears the specified portion
+* When e is printed this is returned:
+   PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* Why is e automatically considered a PointerEvent?
+* Can we make e a MouseEvent?
+=================================================================
