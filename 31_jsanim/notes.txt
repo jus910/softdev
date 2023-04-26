@@ -1,0 +1,20 @@
+Team UHhh - FMC, JM
+SoftDev pd2
+K31 -- Paint, Paint, Paint
+2023-04-26w
+
+DISCO
+-----------------------------------------------------------------
+* cancelling the animation frame before requesting a new one
+prevents the circle's multiplied growth phenomenon
+* the param for the requestAnimationFrame() is a function name
+* you must clear the canvas before updating the canvas to a
+different image in the animation. 
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* What's the benefit of using requestAnimationFrame() instead of
+a regular recursion?
+=================================================================
+
