@@ -1,0 +1,18 @@
+// Team Hair Investment Uncles :: Daniel He, Justin Mohabir, Sir, Alfred
+SoftDev pd2
+// K30 - JS Paint
+2023-04-24m
+
+DISCO
+-----------------------------------------------------------------
+* const img = new Image();
+  img.src = "logo_dvd.jpg"
+Is used to create a image with the source
+* We must use the image width and height as the edges
+* The top left corner is where the image is generated
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* the documentation says that the drawImage function is overloaded
+=================================================================

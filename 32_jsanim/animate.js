@@ -45,27 +45,28 @@ var drawDot = () => {
     window.cancelAnimationFrame(requestID);
     requestID = window.requestAnimationFrame(drawDot);
 }
-var x = Math.floor(Math.random() * (c.clientWidth-100)); 
-var y = Math.floor(Math.random() * (c.clientWidth-100)); 
+var x = Math.floor(Math.random() * (c.clientWidth-100));
+var y = Math.floor(Math.random() * (c.clientWidth-100));
 var x_change = 1;
 var y_change = 1;
 
 var drawDVD = () => {
     //clear
     clear();
-    console.log(x);
+    var s = 5;
+    //console.log(img.width/10);
     //repaint the circle
     ctx.beginPath();
     x=x+x_change;
     y=y+y_change;
-    ctx.drawImage(img, x+x_change, y+y_change,img.width/10, img.height/10);
+    ctx.drawImage(img, x+x_change, y+y_change,img.width/s, img.height/s);
     ctx.fill();
     ctx.stroke();
-    if (x==0 || x==c.clientWidth-100){
+    if (x==0 || x==c.clientWidth-(img.width/s)){
         x_change = -x_change;
-    } 
+    }
 
-    if (y==0 || y==c.clientWidth-100){
+    if (y==0 || y==c.clientWidth-(img.height/s)){
         y_change = -y_change;
     }
 
