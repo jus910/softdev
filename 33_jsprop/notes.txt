@@ -1,0 +1,20 @@
+// Team Hair Investment Uncles :: Daniel He, Justin Mohabir, Sir, Alfred
+SoftDev pd2
+// K30 - JS Paint
+2023-04-24m
+
+a) We predicted that it would always fo in bubble regardless of any order
+
+bubble is a bubble that is expanding, from least nested to most nested 
+capture is capturing from most nested to least nested 
+
+true boolean in the eventListener changes the event to capture
+
+alert makes a popup alert 
+
+getElementsByTagName() makes a list of tags in descending order
+
+// true always comes first, then all the false elements go in bubble order
+// all the true elements appear in capture order
+
+eventPropogation will ensure that only one element appears
